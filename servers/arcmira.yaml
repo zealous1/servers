@@ -14,7 +14,9 @@ long_description: |
   on-demand usage within the account budget. Authorized monitor actions can
   create, update and pause saved research. Feedback sends a report to Arcmira.
 
-  Documentation: https://arcmira.com/docs/mcp-server
+  API documentation: https://arcmira.com/docs
+  MCP setup: https://arcmira.com/docs/mcp-server
+  OpenAPI schema: https://api.arcmira.com/v1/openapi.json
   Source: https://github.com/arcmira/mcp
 maintainer:
   name: Arcmira
