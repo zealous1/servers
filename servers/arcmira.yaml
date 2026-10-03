@@ -1,0 +1,57 @@
+id: arcmira
+name: "Arcmira: YouTube Transcript Search"
+category: data-analysis
+description: Search indexed YouTube transcripts with timestamped source links. Find speaker appearances, mentions, sponsors and recommendations across videos and livestreams.
+long_description: |
+  Give your AI the ability to find who said what with timestamps, discover
+  what's being discussed across videos and livestreams, and distinguish
+  organic recommendations from sponsored ad reads.
+
+  Arcmira searches indexed YouTube content and returns source context.
+  Coverage, speaker attribution and sponsorship classifications can be
+  incomplete; check the cited source. Premium transcripts and creator
+  captions are distinct sources. Premium retrieval may consume credits or
+  on-demand usage within the account budget. Authorized monitor actions can
+  create, update and pause saved research. Feedback sends a report to Arcmira.
+
+  Documentation: https://arcmira.com/docs/mcp-server
+  Source: https://github.com/arcmira/mcp
+maintainer:
+  name: Arcmira
+  github: arcmira
+  website: https://arcmira.com
+authentication:
+  type: oauth2
+  provider: arcmira
+  instructions: |
+    Add https://mcp.arcmira.com/mcp as a Streamable HTTP server in an
+    OAuth-capable MCP client. Sign in to Arcmira and review the requested
+    permissions. An Arcmira account is required. Existing clients may need
+    to reconnect to authorize monitor writes. API-key clients can instead
+    use an Arcmira account key in the Authorization: Bearer header.
+endpoints:
+  production: https://mcp.arcmira.com/mcp
+capabilities:
+  - id: arcmira_describe
+    name: Client reference
+    description: Read method arguments, examples and documentation for the Arcmira client.
+  - id: arcmira_execute_read
+    name: Transcript research
+    description: Search transcripts, mentions, sponsors and recommendations and read monitors. Premium retrieval may consume account usage.
+  - id: arcmira_execute_write
+    name: Research monitors
+    description: Create, update or pause monitors and add tracked entities with write authorization.
+  - id: arcmira_feedback
+    name: Feedback
+    description: Send a feedback report to Arcmira.
+tags:
+  - youtube
+  - transcript-search
+  - timestamps
+  - speakers
+  - sponsors
+  - recommendations
+verification:
+  status: pending
+  security_audit: false
+featured: false
