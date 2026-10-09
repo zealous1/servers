@@ -11,8 +11,9 @@ long_description: |
   Coverage, speaker attribution and sponsorship classifications can be
   incomplete; check the cited source. Premium transcripts and creator
   captions are distinct sources. A Premium read uses credits from your plan,
-  then your on-demand budget. Authorized monitor actions can
-  create, update and pause saved research. Feedback sends a report to Arcmira.
+  then any top-up credits, then your on-demand budget. Authorized monitor
+  actions can create, update and pause saved research. Feedback sends a
+  report to Arcmira.
 
   API documentation: https://arcmira.com/docs
   MCP setup: https://arcmira.com/docs/mcp-server
